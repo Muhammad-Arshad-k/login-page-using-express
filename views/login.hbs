@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <title>Login</title>
+</head>
+
+<body>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-body {
+      width: 300px;
+      text-align: center;
+      border-radius: 20px;
+      background: #6ee1be;
+      padding: 5px;
+    }
+  </style>
+  <section class="vh-100 gradient-custom">
+    <form action="/login" method="POST" class="card-body">
+      <div class="mb-md-5 mt-md-4 pb-5">
+
+        <h2 class="form-label">Login</h2>
+        <p class="text-white-50 mb-5 ">Please enter your login id and password!</p>
+
+        <div class="">
+          <label class="form-label" for="typeEmailX" type="email">email</label><br>
+          <input type="email" id="typeEmailX" name="email" class="form-control form-control-lg" />
+        </div>
+        <div class="">
+          <label class="form-label" for="typePasswordX">Password</label><br>
+          <input type="password" name="pass" id="typePasswordX" class="form-control form-control-lg" />
+        </div>
+        <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
+        <p class="password">{{a}}</p>
+        <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+      </div>
+      <div>
+        <p class="mb-0">Don't have an account? <a href="#!" class="text-white-50 fw-bold">Sign Up</a></p>
+    </form>
+  </section>
+  
+</body>
+
+</html> 
